@@ -1,0 +1,52 @@
+.card { 
+    background-image:
+    linear-gradient(
+      to top, 
+      rgb(238, 62, 62), #f06d06
+    );
+    border: none;
+    color: white;
+    margin-top: 10%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    
+}
+
+.card-columns{
+   
+    align-content: center;
+    width: 75%
+    
+}
+
+.dataWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.CurrentTitle{
+    text-align: center;
+    margin-top: 3%;
+    
+}
+
+.card img {
+  display: flex;
+  width: 100%;
+  
+}
+
+.colorOverlay{
+    background: white;
+    margin: 1.2%;
+    margin-left: 10%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#imageCard{
+   display: flex;
+}

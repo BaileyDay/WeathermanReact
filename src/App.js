@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import WeatherData from './components/weatherData'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav className="navbar">
+        <a className="navbar-brand" href="/">WeatherMan</a>
+      </nav>
+      <div className="logodiv">
+        <img className="logo" src={require('./images/logo.png')} alt="Logo" />
+      </div>
+      <div>
+        <WeatherData />
+      </div>
     </div>
   );
 }
+
+
 
 export default App;

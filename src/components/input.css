@@ -1,0 +1,9 @@
+#InputGroup{
+   width: 30%;
+   margin-top: 5%;
+}
+
+.InputContainer{
+    display: flex;
+    justify-content: center;
+}
