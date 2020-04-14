@@ -38,7 +38,8 @@
 }
 
 .colorOverlay{
-    background: white;
+    background-color: rgb(216, 216, 216);
+
     margin: 1.2%;
     margin-left: 10%;
     border-radius: 50%;
@@ -49,4 +50,8 @@
 
 #imageCard{
    display: flex;
+}
+
+#ErrorAlert {
+    text-align: center;
 }
