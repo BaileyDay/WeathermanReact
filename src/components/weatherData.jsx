@@ -13,7 +13,8 @@ class WeatherData extends Component {
 
     state = {
 
-        userInput: ""
+        userInput: "",
+        day: ""
 
     }
 

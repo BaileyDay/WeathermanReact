@@ -7,3 +7,10 @@
     display: flex;
     justify-content: center;
 }
+
+
+@media only screen and (max-width: 850px) {
+    #InputGroup {
+        width: 75%;
+    }
+  }
