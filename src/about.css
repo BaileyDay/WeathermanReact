@@ -1,0 +1,59 @@
+#aboutLogo {
+    width: 25%;
+    margin-top: 1%;
+}
+
+.row {
+    width: 50%;
+}
+
+.aboutCardWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+#AboutCard{
+  background-color: #E9ECEF;
+  text-align: center;
+  border: 1px solid rgb(172, 172, 172);
+  margin: 5%;
+  margin-bottom: 10%;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+
+  
+}
+
+.UtilLogo {
+    width: 30%;
+    margin-bottom: 2%;
+}
+
+.UtilLogo2 {
+    width: 30%;
+    margin-bottom: 10%;
+    margin-top: 3%;
+}
+.UtilLogo3 {
+    width: 25%;
+    margin-bottom: 2%;
+    
+}
+.UtilLogo4 {
+    width: 50%;
+    margin-bottom: 6%;
+    
+}
+
+@media only screen and (max-width: 850px) {
+    #aboutLogo {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .row {
+        width: 90%;
+    }
+  }
+

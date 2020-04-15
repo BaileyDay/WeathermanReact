@@ -7,11 +7,10 @@
   
 }
 
-.navbar a {
+.navbar-brand {
   color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.7em;
-
 }
 
 .logo {
@@ -29,4 +28,8 @@
     width: 80%;
     margin: 8%;
   }
+}
+
+.navbar a {
+  color: white;
 }

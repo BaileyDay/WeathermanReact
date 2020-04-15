@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LocationInput from './locationInput'
 import DailyForecast from './dailyForecast'
 import './weatherData.css'
+import WeatherGraph from './weatherGraph'
 
 
 class WeatherData extends Component {
@@ -104,7 +105,8 @@ class WeatherData extends Component {
                         </div>}
                 </div>
                 {this.state && this.state.items &&
-                    <DailyForecast data={this.state.items.daily} />}
+                    <DailyForecast data={this.state.items.daily} />
+                }
 
             </div>
         )
