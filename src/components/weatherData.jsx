@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LocationInput from './locationInput'
 import DailyForecast from './dailyForecast'
 import './weatherData.css'
-import WeatherGraph from './weatherGraph'
+
 
 
 class WeatherData extends Component {
@@ -53,7 +53,7 @@ class WeatherData extends Component {
                         ErrorInfo: "",
                         location: this.state.locationItems[0].display_name
                     })
-                    console.log(this.state.items.daily)
+                    console.log(this.state.items)
                 });
         }
         catch (e) {

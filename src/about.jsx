@@ -33,7 +33,7 @@ const AboutPage = () => {
                         <img className="logo" src={require('./images/logo.png')} alt="Logo" id="aboutLogo" />
                         <p className="lead mt-5">WeatherMan was designed and built by <a href="https://github.com/BaileyDay" target="_blank" rel="noopener noreferrer">Bailey Day</a> for his Digital Crafts Cohort.</p>
                         <hr className="my-4"></hr>
-                        <p>It wouldnt have been Possible without the awesome utilities below!</p>
+                        <p>It wouldn't have been possible without the awesome utilities below!</p>
                         <p className="lead">
 
                         </p>
@@ -76,15 +76,23 @@ const AboutPage = () => {
                         <div className="col-sm-6">
                             <div className="card-body" id="AboutCard">
                                 <img src="https://locationiq.com/static/img/locationiq-logo@2x.png" alt="" className="UtilLogo4" />
-                                <h5 className="card-title">Geo Location API</h5>
+                                <h5 className="card-title">LocationIQ API</h5>
                                 <p className="card-text">For GeoLocation data.</p>
                                 <a href="https://locationiq.com/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit LocationIQ</a>
+                            </div>
+                        </div>
+                        <div className="col-sm-6">
+                            <div className="card-body" id="AboutCard">
+                                <img src="https://avatars0.githubusercontent.com/u/10342521?s=280&v=4" alt="" className="UtilLogo5" />
+                                <h5 className="card-title">Chart.js</h5>
+                                <p className="card-text">For dynamic charting, and shoutout to <a href="https://chartkick.com/react" target="_blank" rel="noopener noreferrer">ChartKick</a> for an easy to use solution. </p>
+                                <a href="https://www.chartjs.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Visit Chart.js</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }

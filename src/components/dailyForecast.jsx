@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import './daily.css'
+import 'chart.js'
+import { AreaChart } from 'react-chartkick'
 
 const DailyForecast = (props) => {
 
@@ -11,6 +13,44 @@ const DailyForecast = (props) => {
         setDay(e.currentTarget.getAttribute("id"))
         console.log(props.data[day])
     }
+
+    // Chart Information and code, need to refactor to be more effecient.
+
+    function fetchData(success, fail) {
+        const data = [[days[(new Date(props.data[1].dt * 1000).getDay())], Math.round(props.data[1].temp.day)],
+        [days[(new Date(props.data[2].dt * 1000).getDay())], Math.round(props.data[2].temp.day)],
+        [days[(new Date(props.data[3].dt * 1000).getDay())], Math.round(props.data[3].temp.day)],
+        [days[(new Date(props.data[4].dt * 1000).getDay())], Math.round(props.data[4].temp.day)],
+        [days[(new Date(props.data[5].dt * 1000).getDay())], Math.round(props.data[5].temp.day)],
+        [days[(new Date(props.data[6].dt * 1000).getDay())], Math.round(props.data[6].temp.day)],
+        [days[(new Date(props.data[7].dt * 1000).getDay())], Math.round(props.data[7].temp.day)]]
+        success(data)
+
+    }
+
+    let minimumTemp = [Math.round(props.data[1].temp.day), Math.round(props.data[2].temp.day), Math.round(props.data[3].temp.day), Math.round(props.data[4].temp.day), Math.round(props.data[5].temp.day), Math.round(props.data[6].temp.day), Math.round(props.data[7].temp.day)]
+
+    Array.min = function (array) {
+        return Math.min.apply(Math, array);
+    };
+
+    let almostSmallestNum = Array.min(minimumTemp) - 10
+
+    let smallestNum = Math.round(almostSmallestNum / 10) * 10
+
+    let maxTemp = [Math.round(props.data[1].temp.day), Math.round(props.data[2].temp.day), Math.round(props.data[3].temp.day), Math.round(props.data[4].temp.day), Math.round(props.data[5].temp.day), Math.round(props.data[6].temp.day), Math.round(props.data[7].temp.day)]
+
+    Array.max = function (array) {
+        return Math.max.apply(Math, array);
+    };
+
+    let almostMaxNum = Array.max(maxTemp)
+
+    let maxNum = Math.round(almostMaxNum / 10) * 10 + 10
+
+
+
+    //End Chart code
 
     return (
         <div>
@@ -38,6 +78,34 @@ const DailyForecast = (props) => {
                         </ul>
                     </div>
 
+                </div>
+                <div>
+                    <h1 className="graphTitle">
+                        7 Day  Average Temperature
+                    </h1>
+                </div>
+                <div className="chartContainer">
+                    <AreaChart data={fetchData}
+                        width="75%"
+                        colors={["#f06d06", "#f06d06"]}
+                        xtitle="Day"
+                        ytitle="Temperature ℉"
+                        suffix="℉"
+                        min={0}
+                        max={100}
+                        dataset={{ borderWidth: 5 }}
+                        library={{
+                            scales: {
+                                yAxes: [{
+                                    ticks: {
+                                        maxTicksLimit: 20, stepSize: 10, min: smallestNum, max: maxNum
+
+                                    }
+                                }]
+                            }, animation: { easing: 'easeOutQuad' }
+                        }}
+
+                    />
                 </div>
             </div>
         </div>
