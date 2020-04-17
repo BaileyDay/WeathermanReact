@@ -23,11 +23,45 @@
   justify-content: center;
 }
 
+.container404 {
+display: flex;
+justify-content: center;
+margin-top: 2%;
+}
+
+.text404 {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 4em;
+}
+
+.button404 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.button404 a {
+  width: 30%;
+  height: 50px;
+  padding-top: .7%;
+  
+}
+
 @media only screen and (max-width: 600px) {
   .logo {
     width: 80%;
     margin: 8%;
+    height: 30%;
   }
+  .button404 a {
+    width: 75%;
+    padding-top: 3%; 
+  }
+  .button404 a {
+   margin-top: 10%; 
+  }
+
 }
 
 .navbar a {
