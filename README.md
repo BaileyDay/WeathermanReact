@@ -1,5 +1,4 @@
 
-logo
 
 <!-- PROJECT LOGO -->
 <br />
