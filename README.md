@@ -4,17 +4,17 @@ logo
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo">
-    <img src="images/logo.png" alt="Logo" width="200" height="200">
+
+    <img src="/logo.png" alt="Logo" width="1000" height="400">
   </a>
 
   <h3 align="center">Chat App</h3>
 
   <p align="center">
-    Simple chat interface built on the MERN stack for API and Authentication practice.
+    Front end web application displaying weather data.
     <br />
     <br />
-    <a href="https://chatapp.baileyday.dev">Check out the Live Version</a>
+    <a href="https://weatherman.baileyday.dev">Check out the Live Version</a>
   </p>
 </p>
 
@@ -24,7 +24,7 @@ logo
 <p align="center">
  <img src="/ezgif.com-optimize.gif?raw=true" width="750px">
 </p>
-A small application built on the MERN stack to help me get a better grasp and understanding of working with the backend. Including API's and authentication.
+Front end web application built while at Digital Crafts, allows a user to put in any location and get an abundance of real time weather data.
 
 ### Built With
 
