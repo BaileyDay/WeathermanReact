@@ -8,7 +8,7 @@ logo
     <img src="/logo.png" alt="Logo" width="750" height="300">
     </a>
 
-  <h3 align="center">Chat App</h3>
+  <h3 align="center">Weatherman</h3>
 
   <p align="center">
     Front end web application displaying weather data.
