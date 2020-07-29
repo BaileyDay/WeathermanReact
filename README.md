@@ -4,9 +4,9 @@ logo
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-
-    <img src="/logo.png" alt="Logo" width="1000" height="400">
-  </a>
+    <a>
+    <img src="/logo.png" alt="Logo" width="750" height="300">
+    </a>
 
   <h3 align="center">Chat App</h3>
 
@@ -27,11 +27,13 @@ logo
 Front end web application built while at Digital Crafts, allows a user to put in any location and get an abundance of real time weather data.
 
 ### Built With
-
-* [MongoDB](https://www.mongodb.com/) - Database
-* [Express](https://expressjs.com/) - Server
 * [React](https://reactjs.org/) - Client
-* [Node](https://nodejs.org/en/) - Javascript Runtime
+* [React Router](https://reactrouter.com/) - Client side routing
+* [Bootstrap](https://getbootstrap.com/) - CSS framework
+* [OpenWeather](https://openweathermap.org/) - Weather API
+* [LocationIQ](https://locationiq.com/) - GeoService API
+* [ChartJS](https://www.chartjs.org/) - Chart plotting library
+
 
 
 
